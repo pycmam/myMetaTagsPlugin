@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           myPageMeta
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          myPageMetaAdmin
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        url:                { label: URL страницы, help: "/ - главная, /flat - квартиры и т.д." }
+        meta_title:         { label: Заголовок }
+        meta_keywords:      { label: Ключи }
+        meta_description:   { label: Описание }
+      list:
+        title:            Meta-теги страниц
+        display:          [url, meta_title, meta_keywords, meta_description]
+      filter:  ~
+      form:    ~
+      edit:
+        title:            Редактирование meta-тегов для страницы "%%url%%"
+      new:
+        title:            Добавление meta-тегов
