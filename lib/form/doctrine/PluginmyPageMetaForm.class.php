@@ -10,9 +10,4 @@
  */
 abstract class PluginmyPageMetaForm extends BasemyPageMetaForm
 {
-    public function setup(){
-        parent::setup();
-
-        $this->embedI18n(array('ru', 'en'));
-    }
 }

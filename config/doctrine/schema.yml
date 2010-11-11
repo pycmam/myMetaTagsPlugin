@@ -3,9 +3,6 @@
 # ==========================================================
 myPageMeta:
   tableName:  my_page_metas
-  actAs:
-    I18n:
-      fields: [meta_title, meta_description, meta_keywords]
   columns:
     url:                      { type: string(255), notnull: true, unique: true }
     meta_title:               { type: string(255) }

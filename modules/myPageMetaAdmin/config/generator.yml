@@ -14,10 +14,10 @@ generator:
     config:
       actions: ~
       fields:
-        url:                { label: URL страницы, help: "/ - главная, /flat - квартиры и т.д." }
-        meta_title:         { label: Заголовок }
-        meta_keywords:      { label: Ключи }
-        meta_description:   { label: Описание }
+        url:                { label: URL страницы, help: "/ - главная, /flat - квартиры и т.д., скопируй из браузера" }
+        meta_title:         { label: Title }
+        meta_keywords:      { label: Meta-Keywords }
+        meta_description:   { label: Meta-Description }
       list:
         title:            Meta-теги страниц
         display:          [url, meta_title, meta_keywords, meta_description]

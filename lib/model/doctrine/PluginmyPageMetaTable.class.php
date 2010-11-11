@@ -20,7 +20,7 @@ class PluginmyPageMetaTable extends myBaseTable
 
     public function getByUrl($url)
     {
-        return $this->withI18n(null, 'a')
+        return $this->createQuery('a')
             ->where('a.url = ?', $url)
             ->fetchOne();
     }
