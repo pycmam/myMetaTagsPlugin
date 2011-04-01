@@ -22,5 +22,6 @@ function include_page_metas()
         }
     }
 
+    include_title();
     include_metas();
 }
