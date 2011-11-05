@@ -2,11 +2,11 @@
 # Мета-теги страницы
 # ==========================================================
 
-myPageMetaAdmin:
-  class: sfDoctrineRouteCollection
-  options:
-    model:                myPageMeta
-    module:               myPageMetaAdmin
-    prefix_path:          /myPageMetaAdmin
-    column:               id
-    with_wildcard_routes: true
+#myPageMetaAdmin:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                myPageMeta
+#    module:               myPageMetaAdmin
+#    prefix_path:          /myPageMetaAdmin
+#    column:               id
+#    with_wildcard_routes: true
